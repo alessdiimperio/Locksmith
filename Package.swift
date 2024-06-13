@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
@@ -9,13 +9,15 @@ let package = Package(
     products: [
         .library(
             name: "Locksmith",
-            targets: ["Locksmith"]),
+            targets: ["Locksmith"]
+        ),
     ],
     targets: [
         .target(
             name: "Locksmith",
-            path: "Locksmith",
+            path: "Sources/Locksmith",
             exclude: ["Info.plist"]
         )
     ]
 )
+
